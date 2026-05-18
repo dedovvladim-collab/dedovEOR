@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Характеристики — Высокопроизводительные серверы</title>
+  <link rel="stylesheet" href="стили/стили.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+  <a href="index.html" class="brand"><img src="изображения/логотип_сервер.png" alt="Логотип"><span><span class="brand-title">Высокопроизводительные серверы</span><br><span class="brand-sub">электронный образовательный ресурс</span></span></a>
+  <button class="nav-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+  <nav class="main-nav"><ul><li><a href="index.html">Главная</a></li><li><a href="architecture.html">Архитектура</a></li><li><a href="characteristics.html">Характеристики</a></li><li><a href="storage-network.html">Хранение и сеть</a></li><li><a href="datacenter-clouds.html">ЦОД и облака</a></li><li><a href="test.html">Тест</a></li><li><a href="conclusions.html">Выводы</a></li><li><a href="literature.html">Литература</a></li></ul></nav>
+</div></header>
+<main class="site-main">
+<section class="section"><div class="breadcrumb"><a href="index.html">Главная</a> → Характеристики</div><h1>Основные характеристики высокопроизводительных серверов</h1><p class="lead">Оценка высокопроизводительного сервера должна учитывать не только модель процессора, но и показатели памяти, хранения, сети, надёжности, охлаждения и энергоэффективности.</p></section>
+<figure class="illustration"><img src="изображения/метрики_сервера.png" alt="Метрики сервера"><figcaption>Рис. 3. Основные технические показатели высокопроизводительного сервера</figcaption></figure>
+<figure class="video-block">
+  <video controls width="100%">
+    <source src="видео/video3.mp4" type="video/mp4">
+    Ваш браузер не поддерживает воспроизведение видео.
+  </video>
+  <figcaption>Видео: обзор раздела электронного образовательного ресурса</figcaption>
+</figure>
+<section class="section"><h2>Как измеряется производительность</h2><div class="grid grid-2"><div class="card metric"><div class="metric-num">1</div><div><h3>Вычисления</h3><p>Оцениваются числом ядер и потоков, частотой, кэшем, FLOPS и результатами специализированных тестов.</p></div></div><div class="card metric"><div class="metric-num">2</div><div><h3>Память</h3><p>Учитываются объём, количество каналов, пропускная способность, задержка и поддержка ECC.</p></div></div><div class="card metric"><div class="metric-num">3</div><div><h3>Хранение</h3><p>Ключевые параметры: IOPS, throughput, latency, ресурс записи DWPD, режимы RAID.</p></div></div><div class="card metric"><div class="metric-num">4</div><div><h3>Сеть</h3><p>Важны пропускная способность в Гбит/с, задержки, поддержка RDMA и устойчивость сетевых связей.</p></div></div></div></section>
+<section class="section"><h2>Сводная таблица характеристик</h2><div class="table-wrap"><table><thead><tr><th>Характеристика</th><th>Что показывает</th><th>Примеры показателей</th><th>Значение для сервера</th></tr></thead><tbody><tr><td>CPU</td><td>Вычислительный потенциал</td><td>ядра, потоки, частота, кэш, FLOPS</td><td>Определяет количество параллельных задач</td></tr><tr><td>ОЗУ</td><td>Доступность данных для CPU</td><td>объём, каналы, GB/s, latency, ECC</td><td>Влияет на БД, виртуализацию, аналитику</td></tr><tr><td>Диски</td><td>Скорость чтения и записи</td><td>IOPS, MB/s, latency, DWPD</td><td>Критично для БД, логов и аналитики</td></tr><tr><td>Сеть</td><td>Обмен с клиентами и узлами</td><td>10/25/40/100/200 Гбит/с, RDMA</td><td>Влияет на кластеры, облака и распределённые сервисы</td></tr><tr><td>Надёжность</td><td>Устойчивость к отказам</td><td>MTBF, N+1, 1+1, hot-swap</td><td>Снижает риск простоя</td></tr><tr><td>Энергия</td><td>Затраты на работу</td><td>Вт, TDP, производительность/Вт</td><td>Определяет требования к питанию и охлаждению</td></tr></tbody></table></div></section>
+<section class="section">
+  <h2>Практическое значение характеристик</h2>
+  <p>Одни и те же технические показатели могут иметь разную важность в зависимости от задачи. Поэтому при выборе серверной конфигурации необходимо учитывать не только максимальные значения характеристик, но и реальный сценарий применения.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Сценарий использования</th><th>Особенно важные характеристики</th><th>Практическое значение</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>База данных</td><td>IOPS, latency, RAM ECC, резервирование дисков</td><td>Сервер должен быстро выполнять множество небольших операций чтения и записи без потери данных</td></tr>
+        <tr><td>Виртуализация</td><td>Количество ядер, объём RAM, сеть, мониторинг</td><td>На одном физическом сервере одновременно работает несколько виртуальных машин</td></tr>
+        <tr><td>Искусственный интеллект</td><td>GPU, PCIe, пропускная способность памяти, охлаждение</td><td>Большие массивы данных должны быстро передаваться между CPU, RAM и ускорителями</td></tr>
+        <tr><td>Облачный сервис</td><td>Сеть, отказоустойчивость, масштабируемость, BMC</td><td>Сервис должен обслуживать много пользователей и сохранять доступность при росте нагрузки</td></tr>
+        <tr><td>Файловое хранилище</td><td>Объём дисков, RAID, throughput, резервное копирование</td><td>Важны скорость передачи файлов, сохранность данных и возможность восстановления</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section"><h2>Надёжность и режим непрерывной работы</h2><p>Для серверов важна не только максимальная скорость, но и способность работать длительное время без остановки. Поэтому применяются резервирование блоков питания, горячая замена накопителей, мониторинг температур и журналирование событий.</p><div class="note"><strong>Важно:</strong> RAID повышает отказоустойчивость массива, но не заменяет резервное копирование, так как не защищает от удаления данных, вирусов и логических ошибок.</div></section>
+<div class="page-nav"><a class="btn secondary" href="architecture.html">← Архитектура</a><a class="btn" href="storage-network.html">Хранение и сеть →</a></div>
+</main>
+<footer class="site-footer">Электронный образовательный ресурс «Высокопроизводительные серверы» © 2026</footer>
+<button class="back-to-top" aria-label="Наверх">↑</button>
+<script src="скрипты/сценарий.js"></script>
+
+</body></html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хранение и сеть — Высокопроизводительные серверы</title>
+  <link rel="stylesheet" href="стили/стили.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+  <a href="index.html" class="brand"><img src="изображения/логотип_сервер.png" alt="Логотип"><span><span class="brand-title">Высокопроизводительные серверы</span><br><span class="brand-sub">электронный образовательный ресурс</span></span></a>
+  <button class="nav-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+  <nav class="main-nav"><ul><li><a href="index.html">Главная</a></li><li><a href="architecture.html">Архитектура</a></li><li><a href="characteristics.html">Характеристики</a></li><li><a href="storage-network.html">Хранение и сеть</a></li><li><a href="datacenter-clouds.html">ЦОД и облака</a></li><li><a href="test.html">Тест</a></li><li><a href="conclusions.html">Выводы</a></li><li><a href="literature.html">Литература</a></li></ul></nav>
+</div></header>
+<main class="site-main">
+<section class="section"><div class="breadcrumb"><a href="index.html">Главная</a> → Хранение и сеть</div><h1>Подсистемы хранения данных и сетевого обмена</h1><p class="lead">Для высокопроизводительного сервера скорость вычислений должна поддерживаться быстрым вводом-выводом: накопителями, контроллерами, сетевыми адаптерами и внешними системами хранения.</p></section>
+<figure class="illustration"><img src="изображения/хранение_и_сеть.png" alt="Хранение и сеть"><figcaption>Рис. 4. Связь подсистем хранения и сетевого обмена</figcaption></figure>
+<figure class="video-block">
+  <video controls width="100%">
+    <source src="видео/video4.mp4" type="video/mp4">
+    Ваш браузер не поддерживает воспроизведение видео.
+  </video>
+  <figcaption>Видео: обзор раздела электронного образовательного ресурса</figcaption>
+</figure>
+<section class="section"><h2>Сравнение накопителей</h2><div class="table-wrap"><table><thead><tr><th>Тип</th><th>Особенности</th><th>Плюсы</th><th>Типичное применение</th></tr></thead><tbody><tr><td>HDD</td><td>Механический диск</td><td>Большой объём при низкой цене</td><td>Архивы, резервные копии, холодные данные</td></tr><tr><td>SATA SSD</td><td>SSD через SATA</td><td>Быстрее HDD, простая совместимость</td><td>Системные тома, умеренные нагрузки</td></tr><tr><td>SAS SSD</td><td>Серверный SSD через SAS</td><td>Надёжность, корпоративные функции</td><td>Базы данных, корпоративное хранение</td></tr><tr><td>NVMe SSD</td><td>SSD через PCIe и протокол NVMe</td><td>Высокие IOPS и низкая задержка</td><td>БД, аналитика, кэширование, ИИ</td></tr></tbody></table></div></section>
+<section class="section"><h2>RAID и хранение данных</h2><p>RAID позволяет объединять несколько накопителей в массив для повышения скорости, отказоустойчивости или их сочетания. При выборе уровня RAID учитываются полезная ёмкость, скорость восстановления и допустимый риск потери данных.</p><div class="grid grid-3"><div class="card"><h3>RAID 1</h3><p>Зеркалирование данных. Повышает отказоустойчивость, но уменьшает полезную ёмкость.</p></div><div class="card"><h3>RAID 5/6</h3><p>Использует контрольные данные. Подходит для хранения, но восстановление может быть длительным.</p></div><div class="card"><h3>RAID 10</h3><p>Сочетает зеркалирование и чередование. Часто применяется для высоконагруженных БД.</p></div></div></section>
+<section class="section"><h2>Сетевой обмен</h2><p>В кластерах и ЦОД серверы постоянно обмениваются данными между собой. Для этого используются скоростные сетевые интерфейсы, поддержка низкой задержки и технологии прямого доступа к памяти по сети.</p><ul><li><strong>Ethernet</strong> — универсальная технология локальных и дата-центровых сетей.</li><li><strong>RDMA</strong> — снижает задержки при обмене данными между узлами.</li><li><strong>InfiniBand</strong> — применяется в отдельных высокопроизводительных вычислительных кластерах.</li></ul></section>
+<div class="page-nav"><a class="btn secondary" href="characteristics.html">← Характеристики</a><a class="btn" href="datacenter-clouds.html">ЦОД и облака →</a></div>
+</main>
+<footer class="site-footer">Электронный образовательный ресурс «Высокопроизводительные серверы» © 2026</footer>
+<button class="back-to-top" aria-label="Наверх">↑</button>
+<script src="скрипты/сценарий.js"></script>
+
+</body></html>
